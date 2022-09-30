@@ -12,5 +12,5 @@ public interface UserService {
 
     RecordDTO getDatafromId(int id);
 
-    RecordDTO deleteDataById(int id);
+    String deleteDataById(int id);
 }

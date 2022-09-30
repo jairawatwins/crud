@@ -26,7 +26,7 @@ public class UserController {
         return userService.getDatafromId(id);
     }
     @DeleteMapping("/delete/{id}")
-    public RecordDTO deleteDataById(@PathVariable("id") int id){
+    public String deleteDataById(@PathVariable("id") int id){
         return userService.deleteDataById(id);
     }
 }

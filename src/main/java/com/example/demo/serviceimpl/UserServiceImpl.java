@@ -30,7 +30,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public RecordDTO deleteDataById(int id) {
+    public String deleteDataById(int id) {
         return "Data is deleted";
     }
 }
