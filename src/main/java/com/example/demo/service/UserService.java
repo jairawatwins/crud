@@ -11,4 +11,6 @@ public interface UserService {
     List<RecordDTO> getDataList();
 
     RecordDTO getDatafromId(int id);
+
+    RecordDTO deleteDataById(int id);
 }

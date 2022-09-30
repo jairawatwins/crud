@@ -26,6 +26,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public RecordDTO getDatafromId(int id) {
-        return null;
+        return userRepositary.findAllById(id);
+    }
+
+    @Override
+    public RecordDTO deleteDataById(int id) {
+        return "Data is deleted";
     }
 }

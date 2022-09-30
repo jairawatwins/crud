@@ -23,6 +23,10 @@ public class UserController {
 
     @GetMapping("/get/{id}")
     public RecordDTO getdataFromId(@PathVariable("id") int id){
-        return userService.getDatafromId(id)
+        return userService.getDatafromId(id);
+    }
+    @DeleteMapping("/delete/{id}")
+    public RecordDTO deleteDataById(@PathVariable("id") int id){
+        return userService.deleteDataById(id);
     }
 }
